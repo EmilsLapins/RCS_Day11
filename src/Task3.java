@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task2 {
+public class Task3 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -11,15 +11,14 @@ public class Task2 {
 		System.out.println("Enter value Y:");
 		int y = scanner.nextInt();
 
-		System.out.println("Enter value Z:");
-		int z = scanner.nextInt();
+		int sum = x + y;
 
-		int sum = x + y + z;
-		double avg = sum / 3.0;
-		// VAI ARI
-		// double avg = sum / (double) 3;
+		if (sum >= 10 && sum <= 19) {
+			System.out.println(20);
 
-		System.out.println("Average: " + avg);
+		} else {
+			System.out.println(sum);
+		}
 
 	}
 
